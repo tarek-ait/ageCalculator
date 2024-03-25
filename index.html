@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="touch" style="font-style: normal; color: hsl(0, 1%, 44%); font-size: 15px;position: absolute; top: 40px; font-family: 'poppins';">Made with ❤️ by Tarek Ait Ahmed</h1>
+
+
+
+  
+  <!--our calculator-->
+
+  <div id="mother" class="main" style="margin-left: 1rem;margin-right: 1rem;">
+    <div class="user-info">
+      <div class="input-info">
+        <label id="day-label"  for="day">D A Y</label>
+        <input type="text" id="day" min="1" max="31" name="day" placeholder="DD">
+        <span id="day-error-msg" style="font-size: 10px; color: rgba(255, 68, 0, 0.762);">this field is required</span>
+      </div>
+      <div class="input-info">
+        <label id="month-label"  for="month">M O N T H</label>
+        <input type="text" id="month" name="month" placeholder="MM">
+        <span id="month-error-msg" style="font-size: 10px; color: rgba(255, 68, 0, 0.762);">this field is required</span>
+      </div>
+      <div class="input-info">
+        <label id="year-label" for="year">Y E A R</label>
+        <input type="text" id="year"  name="year" placeholder="YYYY">
+        <span id="year-error-msg" style="font-size: 10px; color: rgba(255, 68, 0, 0.762);">this field is required</span>
+      </div>
+    </div>
+    <div class="seperate">
+      <button class="calc-btn"  onclick="calculate()"><svg style="width: 30px; margin-left:20px;" xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg></button>
+    </div>
+    <div class="calculation-output">
+      <div class="info">
+        <span id="year-age">- -</span>
+        <h1>years</h1>
+      </div>
+      <div class="info">
+        <span id="month-age">- -</span>
+        <h1>months</h1>
+      </div>
+      <div class="info">
+        <span id="day-age">- -</span>
+        <h1>days</h1>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->

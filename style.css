@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* colors 
+- White: hsl(0, 0%, 100%)
+- Off white: hsl(0, 0%, 94%)
+- Light grey: hsl(0, 0%, 86%)
+- Smokey grey: hsl(0, 1%, 44%)
+- Off black: hsl(0, 0%, 8%)
+
+- Purple: hsl(259, 100%, 65%)
+- Light red: hsl(0, 100%, 67%)
+*/ 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'poppins', italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 94%);
+}
+
+.main{
+    background-color: white;
+    margin-top: 15rem;
+    padding: 2rem 3rem;
+    border-radius: 1rem 1rem 10rem 1rem;
+    width: 470px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.main .user-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.main .user-info .input-info{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.main .user-info .input-info label{
+    font-weight: 650;
+    font-size: 10px;
+    color:hsl(0, 1%, 44%);
+    font-family: 'poppins';
+}
+
+.main .user-info .input-info input{
+    width: 75px;
+    font-family: 'poppins';
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+    padding: 8px 14px;
+    border-radius: 5px;
+    outline: none;
+    border:1px solid hsl(0, 0%, 86%);
+}
+
+::placeholder{
+    color: hsl(0, 0%, 53%);
+    font-family: 'poppins';
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.seperate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-top:2px solid hsl(0, 0%, 86%);
+    position: relative;
+}
+
+.seperate button {
+    border: none;
+    background-color:hsl(259, 100%, 65%);
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 10rem;
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    transition: all 0.3s ease;
+}
+
+.seperate button:hover{
+    background-color: black;
+}
+
+.calculation-output{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.calculation-output .info{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.calculation-output .info h1{
+    font-style: italic;
+    font-weight: 800;
+    font-size: 60px;
+}
+
+.calculation-output .info span{
+    color: hsl(259, 100%, 65%);
+    font-style: italic;
+    font-weight: 800;
+    font-size: 60px;
+}
+
+#month-error-msg,
+#year-error-msg,
+#day-error-msg{
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+
+    .seperate{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       position: relative;
+       margin-top: 3rem;
+    }
+
+    .seperate button {
+        position: relative;
+        top: -35px;
+    }
+    .main{
+        gap: 1rem;
+        align-items: center;
+        margin-top: 10rem;
+    }
+
+
+    
+    
+}
